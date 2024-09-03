@@ -139,15 +139,19 @@ section {
     width: 400px;
     margin: 10% 0 0 10%;
     height: auto;
-    transition: all 5s linear;
+    transition: all 3s ease;
     /*Esto hace que la transicion sea lineal*/
+    cursor: pointer;
+    text-align: center;
 }
 
 .hero-img img:hover {
     width: 450;
     opacity: 0.6;
+    transform: translateY(-30px);
 }
-.hero-text a{
+
+.hero-text a {
     display: inline-block;
     background-color: #4d4d4d;
     border: 1px solid transparent;
@@ -159,121 +163,195 @@ section {
     text-transform: uppercase;
     transition: all .5s ease;
 }
-.hero-text a:hover{
+
+.hero-text a:hover {
     background-color: transparent;
     border: 1px solid white;
     transform: translateX(8px);
 }
-.hero-text a.cv i{
+
+.hero-text a.cv i {
     margin-right: 5px;
 }
-.hero-text a.portafolio i{
+
+.hero-text a.portafolio i {
     margin-right: 5px;
 }
-.icons{
+
+.icons-celular {
+    display: none;
+    text-align: center;
+}
+
+.icons-celular i:hover {
+    display: inline-block;
+    cursor: pointer;
+    color: #4d4d4d;
+    transition: all .5s ease;
+    transform: translateY(-8px);
+}
+
+.icons {
     position: absolute;
     top: 50vh;
     padding: 0 3%;
     transform: translateY(-50%);
 }
-.icons i{
+
+.icons i {
     display: block;
     margin: 26px 0;
     font-size: 24px;
     transition: all .5s ease;
 
 }
-.icons i:hover{
+
+.icons i:hover {
     color: #4d4d4d;
     transform: translateY(-5px);
 }
 
-.scroll-down{
+.scroll-down {
     position: absolute;
     bottom: 6%;
     right: 3%;
 }
-.scroll-down i{
+
+.scroll-down i {
     display: block;
     padding: 12px;
     font-size: 25px;
     background-color: #21383d;
-    border-radius: 30px;transition: all .5s ease;
+    border-radius: 30px;
+    transition: all .5s ease;
 }
 
-.scroll-down i:hover{
+.scroll-down i:hover {
     transform: translateY(-5px);
 }
+
 /*Aca vamos a hacer mediaqueries para que la web sea responsive*/
-@media (max-width: 992px){
-    section{
+@media (max-width: 992px) {
+    section {
         padding: 0 3%;
         transition: 0.2s;
     }
-    .hero-text{
-        padding-top: 0;
+
+    .hero-text {
+        padding-top: 20px;
+        height: 75%;
     }
-    .hero-img{
+
+    .hero-img {
         text-align: center;
+        margin-top: 25px;
     }
-    .hero-img img{
+
+    .hero-img img {
         width: 80%;
         margin: 10% 0 0 10%;
     }
-    .hero-text p{
+
+    .hero-text p {
         font-size: 70%;
     }
-    .icons{
+
+    .icons {
         display: none;
 
     }
-    .scroll-down{
+
+    .scroll-down {
         display: none;
+    }
+
+    .icons-celular {
+        display: block;
+        font-size: 30px;
+        padding: 5px;
+        text-align: left;
+        margin-left: 10%;
+
     }
 }
-@media(max-width: 768px){
-    .menu-icon-action{
-        display: block;
-    }
-    #menu-icon{
+
+@media(max-width: 768px) {
+    .menu-icon-action {
         display: block;
     }
 
-    .hero-text{
+    #menu-icon {
+        display: block;
+    }
+
+    .hero-text {
         text-align: center;
         padding-top: 100px;
 
     }
-    .hero-img img{
-        margin: 0;
+
+    .hero-img img {
+        margin: 10% 15%;
+        height: 40%;
+        padding: 10px;
+        width: 35%;
+
 
     }
-    .hero{
+
+    .hero {
         height: 100%;
         gap: 1;
         grid-template-columns: 1fr;
     }
 
-    .navlist{
-      position: absolute;
-      top: 100%;
-      right: -100%;
-      width: 200px;
-      height: 180px;
-      background-color: #0045027f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
-      transition: all .5s ease;
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #024a04cc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease;
     }
-    .navlist a{
+
+    .navlist a {
         display: block;
         margin: 7px 0;
 
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    #menu-toggle:checked+label.menu-icon-action+ul {
         right: 0;
     }
+
+    .icons-celular {
+        text-align: center;
+    }
+
+    .icons-celular i {
+        display: inline-block;
+        font-size: 25px;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        height: 5vh;
+    }
+
+    .icons-celular i:hover {
+        transform: translateY(-7px);
+        transition: all .5s ease;
+
+    }
+
+
+
+
+
+
+
 }
