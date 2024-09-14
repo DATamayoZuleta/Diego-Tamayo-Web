@@ -106,6 +106,7 @@ header {
 }
 
 section {
+
     padding: 0 8%;
 }
 
@@ -113,19 +114,20 @@ section {
     font-family: monospace;
     font-size: 50px;
     line-height: 1;
-    margin: 0 0 30px;
+    margin: 10px 0 10px 0;
 }
 
 .hero-text p {
-    font-size: 80%;
-    margin-bottom: 40px;
+    font-size: 95%;
+    margin-bottom: 30px;
     line-height: 1.9;
 }
 
 .hero-text h5 {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 
 }
 
