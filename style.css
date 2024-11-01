@@ -75,6 +75,7 @@ header {
     /*Para que este encima del header*/
     cursor: pointer;
     /*Para que aparezca la mano al señalarlo*/
+    display: none;
 }
 
 #menu-toggle {
@@ -327,9 +328,6 @@ section {
 
     }
 
-    #menu-toggle:checked+label.menu-icon-action+ul {
-        right: 0;
-    }
 
     .icons-celular {
         display: flex;
@@ -349,6 +347,10 @@ section {
         transform: translateY(-7px);
         transition: all .5s ease;
 
+    }
+
+    .navlist.open{
+        right: 0;
     }
 
 
